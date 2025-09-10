@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App Info — Simple Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #fafafa;
+      --card: #efefef;
+      --text: #222;
+      --accent: #444;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{
+      background:var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+    }
+
+    /* big rounded card */
+    .card{
+      width:100%;
+      max-width:1600px;
+      background:var(--card);
+      border-radius:48px;
+      padding:80px 120px;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.02) inset;
+    }
+
+    /* content layout */
+    .content{
+      max-width:900px;
+      margin:0 auto;
+      text-align:left;
+    }
+
+    .list{
+      font-size:36px;
+      line-height:1.45;
+      color:var(--text);
+      font-weight:600;
+      letter-spacing:0.6px;
+    }
+
+    /* make type scale on smaller screens */
+    @media (max-width:1000px){
+      .card{padding:56px 40px;border-radius:36px}
+      .list{font-size:28px}
+    }
+    @media (max-width:520px){
+      body{padding:20px}
+      .card{padding:28px;border-radius:24px}
+      .list{font-size:18px}
+    }
+
+    /* small footer note */
+    .footer{
+      margin-top:28px;
+      font-size:13px;
+      color:var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="content" role="main">
+      <p class="list">1- We NOT ACCESS ON  FOR GET THE SOME FUN<br>
+      2- WE DON'T SEE USER DATA OR ETC<br>
+      3- WE DOSE'T HAVE ACCESS FOR CAMERA OR MIC OF MOBILE ETC</p>
+
+      <p class="footer">This is a static landing page mockup. Tell me if you want different wording, colors, or a downloadable file.</p>
+    </div>
+  </main>
+</body>
+</html>
